@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".sistem_pakar.SpOpen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_sp_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:hint="id"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/liu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="15dp"
+            android:layout_toRightOf="@+id/lid"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/u"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/lid"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="Nama Pasien : "/>
+
+            <TextView
+                android:id="@+id/user_sp_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#16a085"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:hint="Pasien"
+                android:layout_marginStart="3dp"
+                android:layout_toRightOf="@+id/u"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lilhr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/liu"
+            android:layout_toRightOf="@+id/lid"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/liu"
+                android:layout_toRightOf="@+id/lid"
+                android:text="Lahir, "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/sp_tgl_l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_toRightOf="@+id/mau"
+                android:textSize="15sp"
+                android:hint="-"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_toRightOf="@+id/lid"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="-273dp"
+            android:src="@drawable/orangpjk"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/lid">
+
+        <TextView
+            android:id="@+id/txa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sistem Pakar"
+            android:textColor="#000000"
+            android:layout_marginTop="19dp"
+            android:textAlignment="center"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/txb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Untuk Menetukan Jenis Perawatan"
+            android:layout_below="@+id/txa"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/txc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:text="Pada Klinik Gigi Dokter Mila"
+            android:layout_below="@+id/txb"
+            android:textAlignment="center"/>
+
+
+        <TextView
+            android:id="@+id/txd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Kami akan memberikan pertanyaan mengenai seputar
+kondisi gigi anda yang memerlukan tindakan lanjut oleh dokter.
+Jawab pertanyaan tersebut dengan memilih Radio Button yang telah kami sediakan (IYA / TIDAK)"
+            android:layout_below="@+id/txc"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Nantinya kami akan menampilkan jenis perawatan apa yang cocok untuk anda, dari pertanyaan-pertanyaan yang telah anda
+jawab sebelumnya."
+            android:layout_below="@+id/txd"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:textAlignment="center"/>
+
+    </RelativeLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btn_mulai_sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MULAI"
+        android:background="@drawable/button_custom1"
+        android:layout_below="@+id/rid"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

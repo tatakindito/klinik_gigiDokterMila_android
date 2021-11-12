@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".HalamanUtama">
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="13sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/j_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/j_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            />
+
+    </LinearLayout>
+
+    <!--<TextView
+        android:id="@+id/jdw_minggu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jadwal Minggu Ini"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="#070707"
+        android:textSize="18sp"/>-->
+
+   <!-- <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/jdw_minggu"/> -->
+
+   <!-- <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jdw_minggu"
+        android:layout_centerHorizontal="true" /> -->
+
+    <LinearLayout
+        android:id="@+id/lay_find"
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/line"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/find"/>
+
+    <EditText
+        android:id="@+id/jdw_tgl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:clickable="true"
+        android:editable="false"
+        android:focusable="false"
+        android:hint="Cari Jadwal" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_custom1"
+        android:layout_below="@+id/lay_find"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Cek Jadwal Terpilih" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/jdw_this"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jadwal Klinik Hari Ini"
+        android:layout_below="@+id/button1"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:textColor="#070707"
+        android:textSize="18sp"/>
+
+
+
+
+        <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/jdw_this"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true"
+            android:layout_above="@+id/btn">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="1dp">
+
+                <ListView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            </ScrollView>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addJdw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="19dp"
+        android:src="@drawable/ic_add_circle_outline_black_24dp" />
+
+
+</RelativeLayout>

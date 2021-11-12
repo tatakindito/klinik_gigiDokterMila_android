@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dokter Mila</string>
+    <string name="admob_publisher_id">ca-app-pub-4193119508422984~5154024723</string>
+    <string name="admob_interstitial_id">ca-app-pub-4193119508422984/2527861381</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_message_form_empty">Form tidak boleh kosong</string>
+</resources>

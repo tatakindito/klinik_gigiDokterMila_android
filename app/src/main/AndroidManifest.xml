@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.doktermila">
+
+    <application
+        android:name=".login_register.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Whatsapp"></activity>
+        <activity android:name=".KeteranganTreatment" />
+        <activity android:name=".treatment.DataTreatment" />
+        <activity android:name=".data_pakar.AddGejala" />
+        <activity android:name=".data_pakar.AddPerawatan" />
+        <activity android:name=".data_pakar.EditGejalaBase" />
+        <activity android:name=".data_pakar.EditPerawatanBase" />
+        <activity android:name=".ListItemGejala" />
+        <activity android:name=".data_pakar.GejalaBase" />
+        <activity android:name=".data_pakar.PerawatanBase" />
+        <activity android:name=".sistem_pakar.DataPerawatan" />
+        <activity android:name=".sistem_pakar.HasilSp" />
+        <activity android:name=".KeteranganGambar" />
+        <activity android:name=".data_diri.EditDataDiri" />
+        <activity android:name=".data_diri.DataDiri" />
+        <activity android:name=".sistem_pakar.SpOpen" />
+        <activity android:name=".sistem_pakar.SistemPakar" />
+        <activity android:name=".LihatJadwal" />
+        <activity android:name=".ListItemJadwal" />
+        <activity android:name=".Spinner.Rabu" />
+        <activity android:name=".Spinner.Selasa" />
+        <activity android:name=".Spinner.Senin" />
+        <activity android:name=".About" />
+        <activity android:name=".ListItemRiwayat" />
+        <activity android:name=".riwayat.Riwayat" />
+        <activity android:name=".Qr" />
+        <activity android:name=".testi.KetTestimoni" />
+        <activity android:name=".testi.AmbilTestimoni" />
+        <activity android:name=".testi.TestimoniTindakan" />
+        <activity android:name=".testi.Testimoni" />
+        <activity android:name=".kritik_saran.KritikSaran" />
+        <activity android:name=".perawatan.ListBottomJadwal" />
+        <activity android:name=".HalamanUtama" />
+        <activity android:name=".perawatan.ActTindakan" />
+        <activity android:name=".perawatan.MenuTindakan" />
+        <activity android:name=".KetList" />
+        <activity android:name=".ListItem" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/noActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login_register.Login" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".login_register.Register" />
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="30"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
