@@ -2,7 +2,7 @@
 
 
 
-![Screenshot_2021-06-04-00-49-25-224_com example doktermila](https://user-images.githubusercontent.com/41324515/141511236-ce5175c9-955b-4a8c-9630-e1b6da6b3f4d.png
+![Screenshot_2021-06-04-00-49-25-224_com example doktermila](https://user-images.githubusercontent.com/41324515/141511236-ce5175c9-955b-4a8c-9630-e1b6da6b3f4d.png)
 ![Screenshot_2021-06-08-23-50-02-389_com example doktermila](https://user-images.githubusercontent.com/41324515/141511343-bc923f5a-2c5f-4239-bb13-b5d895efc7b6.png)
 ![Screenshot_2021-11-13-00-18-41-197_com example doktermila](https://user-images.githubusercontent.com/41324515/141511553-6e875fc9-2e2f-49cb-953e-90c725c22638.jpg)
 ![Screenshot_2021-11-13-00-19-04-655_com example doktermila](https://user-images.githubusercontent.com/41324515/141511498-9a744432-8c04-4f83-a9b4-5309b35e0da9.jpg)
